@@ -144,7 +144,7 @@ function checkAuth() {
     }
     
     if (isAuthenticated() && isPublicPath) {
-        window.location.href = 'Home.html';
+        window.location.href = 'home.html';
         return false;
     }
     
