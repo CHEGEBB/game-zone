@@ -1,15 +1,13 @@
-// Constants
-const API_URL = 'https://game-glitz1.onrender.com/api';
+const API_URL = 'https://game-zone-62w0.onrender.com/api';
 const AUTH_TOKEN_KEY = 'auth_token';
 const USER_KEY = 'user_data';
-const SESSION_DURATION = 1000 * 60 * 60; // 1 hour
-const PUBLIC_PATHS = ['/index.html', '/login.html', '/register.html', '/']; // Pages accessible without auth
-const HOME_PAGE = 'Home.html'; // Define the correct home page filename with capital H
+const SESSION_DURATION =  1000 * 60 * 60 * // 1 hour
 
 // Input styling functions
 function setInputSuccess(inputElement) {
     const formGroup = inputElement.parentElement;
     formGroup.className = 'form-group success';
+    // Add success styles
     inputElement.style.borderColor = '#2ecc71';
     inputElement.style.boxShadow = '0 0 5px rgba(46, 204, 113, 0.5)';
 }
@@ -17,9 +15,12 @@ function setInputSuccess(inputElement) {
 function setInputError(inputElement, message) {
     const formGroup = inputElement.parentElement;
     formGroup.className = 'form-group error';
+    
+    // Add error styles
     inputElement.style.borderColor = '#e74c3c';
     inputElement.style.boxShadow = '0 0 5px rgba(231, 76, 60, 0.5)';
     
+    // Create or update error message
     let errorDisplay = formGroup.querySelector('.error-message');
     if (!errorDisplay) {
         errorDisplay = document.createElement('small');
@@ -79,9 +80,8 @@ async function login(username, password) {
             throw new Error(data.message || 'Login failed');
         }
 
-        // Store auth data with encryption
-        const encryptedToken = btoa(data.token); // Basic encryption for demo
-        sessionStorage.setItem(AUTH_TOKEN_KEY, encryptedToken);
+        // Store auth data
+        sessionStorage.setItem(AUTH_TOKEN_KEY, data.token);
         sessionStorage.setItem(USER_KEY, JSON.stringify(data.user));
         sessionStorage.setItem('session_expiry', Date.now() + SESSION_DURATION);
         
@@ -134,40 +134,12 @@ function isAuthenticated() {
     return true;
 }
 
-// Route protection
-function checkAuth() {
-    const currentPath = window.location.pathname;
-    const isPublicPath = PUBLIC_PATHS.some(path => currentPath.endsWith(path));
-    
-    if (!isAuthenticated() && !isPublicPath) {
-        window.location.href = 'index.html';
-        return false;
-    }
-    
-    if (isAuthenticated() && isPublicPath) {
-        window.location.href = HOME_PAGE; // Use the constant with capital H
-        return false;
-    }
-    
-    return true;
-}
-
-// Periodic auth check
-function startAuthCheck() {
-    setInterval(() => {
-        if (!checkAuth()) {
-            logout();
-        }
-    }, 30000); // Check every 30 seconds
-}
-
 // Form handling
 function initializeAuthForms() {
-    const loginForm = document.getElementById('login-form');
-    const signupForm = document.getElementById('signup-form');
+    const loginForm = document.getElementById('login');
+    const signupForm = document.getElementById('signup');
     const switchToSignupBtn = document.getElementById('switch-to-signup');
     const switchToLoginBtn = document.getElementById('switch-to-login');
-    const logoutBtn = document.getElementById('logout-btn');
 
     // Add input event listeners for real-time validation
     document.querySelectorAll('input').forEach(input => {
@@ -200,7 +172,7 @@ function initializeAuthForms() {
                 if (result.success) {
                     setInputSuccess(username);
                     setInputSuccess(password);
-                    window.location.href = HOME_PAGE; // Use the constant with capital H
+                    window.location.href = 'Home.html';
                 } else {
                     setInputError(username, result.error);
                     setInputError(password, result.error);
@@ -248,6 +220,7 @@ function initializeAuthForms() {
         });
     }
 
+    // Form switching
     if (switchToSignupBtn) {
         switchToSignupBtn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -260,42 +233,6 @@ function initializeAuthForms() {
             e.preventDefault();
             showLoginForm();
         });
-    }
-
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            logout();
-        });
-    }
-}
-
-function validateField(input) {
-    const id = input.id;
-    let error = null;
-    
-    switch(id) {
-        case 'username':
-        case 'signup-username':
-            error = validateUsername(input.value);
-            break;
-        case 'signup-email':
-            error = validateEmail(input.value);
-            break;
-        case 'password':
-        case 'signup-password':
-            error = validatePassword(input.value);
-            break;
-        case 'confirm-password':
-            const password = document.getElementById('signup-password');
-            error = input.value !== password.value ? 'Passwords do not match' : null;
-            break;
-    }
-    
-    if (error) {
-        setInputError(input, error);
-    } else {
-        setInputSuccess(input);
     }
 }
 
@@ -328,11 +265,15 @@ function clearAllInputStates() {
 
 // Initialize everything when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication status
-    checkAuth();
-    
-    // Start periodic auth checking
-    startAuthCheck();
+    if (isAuthenticated()) {
+        const currentPath = window.location.pathname;
+        const isIndexPage = currentPath.endsWith('index.html') || currentPath === '/';
+        
+        if (isIndexPage) {
+            window.location.href = 'Home.html';
+            return;
+        }
+    }
     
     initializeAuthForms();
 });
