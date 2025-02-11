@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone - Feedback</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-gamepad"></i>
+            <h1>Game Zone</h1>
+        </a>
+        <ul class="nav">
+            <li><a href="Home.html"> <i class="fas fa-home"></i> Home </a></li>
+            <li><a href="Categories.html"> <i class="fas fa-th-large"></i> Categories </a></li>
+            <li><a href="blogsss.html"> <i class="fas fa-blog"></i> Blog </a></li>
+            <li><a href="Community.html"> <i class="fas fa-info-circle"></i> Community </a></li>
+            <li><a href="Feedback new.html" class="active"> <i class="fas fa-comment"></i> Feedback</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBox">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+        <div class="toggleMenu"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Feedback Hero Section -->
+    <section class="feedback-hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>We Value Your Feedback</h1>
+            <p>Help us improve by sharing your thoughts and suggestions about Game Zone.</p>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section class="feedback-form">
+        <h1 class="heading">Feedback <span>Form</span></h1>
+        <form id="feedback-form">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend><i class="fas fa-user"></i> Personal Information</legend>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="user_address" placeholder="Enter your address" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="user_phone" placeholder="Enter contact number" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female" required> Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="user_dob" required>
+                </div>
+            </fieldset>
+
+            <!-- Rating and Status -->
+            <fieldset>
+                <legend><i class="fas fa-star"></i> Rating & Status</legend>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="3">3 - Good</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="1">1 - Poor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="continue">Continue Surfing</option>
+                        <option value="stop">Stop Surfing</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Feedback Message -->
+            <fieldset>
+                <legend><i class="fas fa-comment"></i> Your Feedback</legend>
+                <div class="form-group">
+                    <textarea id="message" name="user_message" placeholder="Enter your message here" required></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Submit Buttons -->
+            <div class="form-buttons">
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+                <button type="button" class="home-btn"><a href="Home.html">Back to Home</a></button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-body">
+            <div class="footer-section">
+                <div class="logo footer-logo">
+                    <i class="fas fa-gamepad"></i>
+                    <h1>Game Zone</h1>
+                </div>
+                <p>Your ultimate destination for gaming entertainment</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-link"></i> Quick Links</h3>
+                <ul>
+                    <li><a href="About.html"><i class="fa fa-users"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-gamepad"></i> Arcade</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Multiplayer Games</a></li>
+                    <li><a href="#"><i class="fab fa-windows"></i> Microsoft Games</a></li>
+                    <li><a href="#"><i class="fab fa-playstation"></i> PS-4 2023</a></li>
+                    <li><a href="#"><i class="fab fa-xbox"></i> Xbox Games</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3><i class="fas fa-fire"></i> Action Games</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-fist-raised"></i> Tekken</a></li>
+                    <li><a href="#"><i class="fas fa-user-ninja"></i> Stick Fight</a></li>
+                    <li><a href="#"><i class="fas fa-crosshairs"></i> Shooter</a></li>
+                    <li><a href="#"><i class="fas fa-fort-awesome"></i> Fortnite</a></li>
+                    <li><a href="#"><i class="fas fa-fire-alt"></i> Free Fire</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3><i class="fas fa-paper-plane"></i> Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Game Zone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="feedback.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

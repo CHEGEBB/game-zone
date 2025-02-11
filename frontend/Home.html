@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Glitz - Your Gaming Universe</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-gamepad"></i>
+			<h1>Game Glitz</h1>
+        </a>
+        <ul class="nav">
+            <li><a href="Home.html" class="active"> <i class="fas fa-home"></i> Home </a></li>
+            <li><a href="Categories.html"> <i class="fas fa-th-large"></i> Categories </a></li>
+            <li><a href="blogsss.html"> <i class="fas fa-blog"></i> Blog </a></li>
+            <li><a href="Community.html"> <i class="fas fa-info-circle"></i> Community </a></li>
+            <li><a href="Feedback new.html"> <i class="fas fa-comment"></i> Feedback</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBox">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Games">
+            </div>
+            <div class="user-actions">
+                <a href="./index.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="./index.html" class="signup-btn"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </div>
+        </div>
+        <div class="toggleMenu"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="banner">
+        <div class="overlay"></div>
+        <div class="bg">
+            <div class="content">
+                <h2>A New Home for<br>Game Lovers</h2>
+                <p>Discover, Play, Connect - Your Ultimate Gaming Destination</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn primary-btn">
+                        <i class="fas fa-gamepad"></i>
+                        Join Now
+                    </a>
+                    <a href="#" class="btn secondary-btn">
+                        <i class="fas fa-play"></i>
+                        Watch Trailer
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="gta2.jpg" alt="Featured Game">
+            </div>
+        </div>
+    </div>
+
+    <!-- Updates Section -->
+    <div class="about parallax-section">
+        <div class="overlay"></div>
+        <div class="contentBx">
+            <h2><i class="fas fa-newspaper"></i> Latest Updates</h2>
+            <div class="updates-grid">
+                <div class="update-card">
+                    <div class="update-header">
+                        <i class="fas fa-star"></i>
+                        <h3>The Last of Us Part II</h3>
+                    </div>
+                    <p>New story expansion and multiplayer mode now available!</p>
+                    <div class="update-footer">
+                        <span class="date">New Release</span>
+                        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="update-card">
+                    <div class="update-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Horizon Forbidden West</h3>
+                    </div>
+                    <p>New DLC "Burning Shores" adds epic storyline and challenging missions!</p>
+                    <div class="update-footer">
+                        <span class="date">April 2024</span>
+                        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="update-card">
+                    <div class="update-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>PlayStation Plus Expansion</h3>
+                    </div>
+                    <p>Enhanced game library and new cloud gaming features now available!</p>
+                    <div class="update-footer">
+                        <span class="date">New Service</span>
+                        <a href="#" class="read-more">Explore Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="update-card">
+                    <div class="update-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Starfield Crossover</h3>
+                    </div>
+                    <p>Exclusive content and crossover missions now live!</p>
+                    <div class="update-footer">
+                        <span class="date">Recent Update</span>
+                        <a href="#" class="read-more">Check It Out <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="blogsss.html" class="view-all-btn">
+                <i class="fas fa-newspaper"></i>
+                View All Updates
+            </a>
+        </div>
+    </div>
+
+    <!-- Games Section -->
+    <div class="games">
+        <h2><i class="fas fa-fire"></i> Popular Games</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Games</button>
+            <button class="filter-btn" data-filter="action">Action</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+            <button class="filter-btn" data-filter="adventure">Adventure</button>
+        </div>
+        
+        <!-- Initial 18 cards -->
+<div class="cardBx">
+    <!-- Card 1 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="spider.png" alt="Spider Man">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Spider Man Remastered</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">Adventure</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.8</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="gow.jpg" alt="God of War">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>God of War</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">RPG</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.9</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="lastofus.jpg" alt="The Last of Us">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>The Last of Us</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">Survival</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.9</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" data-category="horror">
+        <div class="card-image">
+            <img src="re.jpg" alt="Resident Evil 4">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Resident Evil 4</h4>
+                <div class="tags">
+                    <span class="tag">Horror</span>
+                    <span class="tag">Action</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.7</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="gta1.jpeg" alt="GTA V">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>GTA V</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">Open World</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.8</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" data-category="fps">
+        <div class="card-image">
+            <img src="coldwar.png" alt="Call of Duty">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Call of Duty: Cold War</h4>
+                <div class="tags">
+                    <span class="tag">FPS</span>
+                    <span class="tag">Action</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.5</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card" data-category="battle-royale">
+        <div class="card-image">
+            <img src="fortnite.jpg" alt="Fortnite">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Fortnite</h4>
+                <div class="tags">
+                    <span class="tag">Battle Royale</span>
+                    <span class="tag">Action</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.4</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card" data-category="fps">
+        <div class="card-image">
+            <img src="battlefield.jpg" alt="Battlefield">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Battlefield</h4>
+                <div class="tags">
+                    <span class="tag">FPS</span>
+                    <span class="tag">Action</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.6</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="assassin.jpg" alt="Assassin's Creed">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Assassin's Creed</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">Adventure</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.7</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card" data-category="sports">
+        <div class="card-image">
+            <img src="carrace.jpg" alt="Car Racing">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Racing Simulator 2023</h4>
+                <div class="tags">
+                    <span class="tag">Sports</span>
+                    <span class="tag">Racing</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.5</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="card" data-category="sports">
+        <div class="card-image">
+            <img src="fifa21.webp" alt="FIFA 21">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>FIFA 21</h4>
+                <div class="tags">
+                    <span class="tag">Sports</span>
+                    <span class="tag">Football</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.6</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="battle.jpg" alt="Battle Arena">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Battle Arena</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">PvP</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.3</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 13 -->
+    <div class="card" data-category="adventure">
+        <div class="card-image">
+            <img src="mincrft.jpg" alt="Minecraft">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Minecraft</h4>
+                <div class="tags">
+                    <span class="tag">Adventure</span>
+                    <span class="tag">Sandbox</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.8</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 14 -->
+    <div class="card" data-category="horror">
+        <div class="card-image">
+            <img src="phasmobia.jpg" alt="Phasmophobia">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Phasmophobia</h4>
+                <div class="tags">
+                    <span class="tag">Horror</span>
+                    <span class="tag">Co-op</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.7</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 15 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="walking dead.jpg" alt="Walking Dead">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>The Walking Dead</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">Story</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.6</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 16 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="freefire.jpg" alt="Free Fire">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Free Fire</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">Battle Royale</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.5</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 17 -->
+    <div class="card" data-category="action">
+        <div class="card-image">
+            <img src="creed.jpg" alt="Assassin's Creed Valhalla">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>AC: Valhalla</h4>
+                <div class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">RPG</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.7</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 18 -->
+    <div class="card" data-category="adventure">
+        <div class="card-image">
+            <img src="classhofclaans.jpg" alt="Clash of Clans">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>Clash of Clans</h4>
+                <div class="tags">
+                    <span class="tag">Strategy</span>
+                    <span class="tag">MMO</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.5</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden cards for load more (initially hidden with CSS) -->
+    <div class="card hidden" data-category="sports">
+        <div class="card-image">
+            <img src="nba.jpg" alt="NBA 2K23">
+            <div class="card-overlay">
+                <div class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="quick-view">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-info">
+                <h4>NBA 2K23</h4>
+                <div class="tags">
+                    <span class="tag">Sports</span>
+                    <span class="tag">Basketball</span>
+                </div>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.6</span>
+                </div>
+                <a href="#" class="play-btn">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+	<!-- Hidden card 1 -->
+<div class="card hidden" data-category="sports">
+    <div class="card-image">
+        <img src="fifa23.jpg" alt="FIFA 23">
+        <div class="card-overlay">
+            <div class="wishlist-btn">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="quick-view">
+                <i class="fas fa-play"></i>
+                Preview
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="game-info">
+            <h4>FIFA 23</h4>
+            <div class="tags">
+                <span class="tag">Sports</span>
+                <span class="tag">Soccer</span>
+            </div>
+        </div>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.7</span>
+            </div>
+            <a href="#" class="play-btn">
+                <i class="fas fa-play"></i>
+                Play Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Hidden card 2 -->
+<div class="card hidden" data-category="action">
+    <div class="card-image">
+        <img src="Miles.png" alt="Marvel's Spider-Man: Miles Morales">
+        <div class="card-overlay">
+            <div class="wishlist-btn">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="quick-view">
+                <i class="fas fa-play"></i>
+                Preview
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="game-info">
+            <h4>Marvel's Spider-Man: Miles Morales</h4>
+            <div class="tags">
+                <span class="tag">Action</span>
+                <span class="tag">Adventure</span>
+            </div>
+        </div>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.8</span>
+            </div>
+            <a href="#" class="play-btn">
+                <i class="fas fa-play"></i>
+                Play Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Hidden card 3 -->
+<div class="card hidden" data-category="rpg">
+    <div class="card-image">
+        <img src="Elden Ring.jpg" alt="Elden Ring">
+        <div class="card-overlay">
+            <div class="wishlist-btn">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="quick-view">
+                <i class="fas fa-play"></i>
+                Preview
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="game-info">
+            <h4>Elden Ring</h4>
+            <div class="tags">
+                <span class="tag">RPG</span>
+                <span class="tag">Open World</span>
+            </div>
+        </div>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.9</span>
+            </div>
+            <a href="#" class="play-btn">
+                <i class="fas fa-play"></i>
+                Play Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Hidden card 4 -->
+<div class="card hidden" data-category="horror">
+    <div class="card-image">
+        <img src="residentevil4.webp" alt="Resident Evil Village">
+        <div class="card-overlay">
+            <div class="wishlist-btn">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="quick-view">
+                <i class="fas fa-play"></i>
+                Preview
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="game-info">
+            <h4>Resident Evil Village</h4>
+            <div class="tags">
+                <span class="tag">Horror</span>
+                <span class="tag">Survival</span>
+            </div>
+        </div>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.6</span>
+            </div>
+            <a href="#" class="play-btn">
+                <i class="fas fa-play"></i>
+                Play Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Hidden card 5 -->
+<div class="card hidden" data-category="simulation">
+    <div class="card-image">
+        <img src="sims.jpg" alt="The Sims 4">
+        <div class="card-overlay">
+            <div class="wishlist-btn">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="quick-view">
+                <i class="fas fa-play"></i>
+                Preview
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="game-info">
+            <h4>The Sims 4</h4>
+            <div class="tags">
+                <span class="tag">Simulation</span>
+                <span class="tag">Life</span>
+            </div>
+        </div>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.4</span>
+            </div>
+            <a href="#" class="play-btn">
+                <i class="fas fa-play"></i>
+                Play Now
+            </a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- Load More Button -->
+<button class="load-more-btn">
+    <i class="fas fa-spinner"></i>
+    Load More Games
+</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-body">
+            <div class="footer-section">
+                <div class="logo footer-logo">
+                    <i class="fas fa-gamepad"></i>
+                    <h1>Game Glitz</h1>
+                </div>
+                <p>Your ultimate destination for gaming entertainment</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-link"></i> Quick Links</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-gamepad"></i> Arcade</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Multiplayer Games</a></li>
+                    <li><a href="#"><i class="fab fa-windows"></i> Microsoft Games</a></li>
+                    <li><a href="#"><i class="fab fa-playstation"></i> PS-4 2023</a></li>
+                    <li><a href="#"><i class="fab fa-xbox"></i> Xbox Games</a></li>
+                    <li><a href="About.html"><i class="fa fa-users"></i> About Us</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3><i class="fas fa-fire"></i> Action Games</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-fist-raised"></i> Tekken</a></li>
+                    <li><a href="#"><i class="fas fa-user-ninja"></i> Stick Fight</a></li>
+                    <li><a href="#"><i class="fas fa-crosshairs"></i> Shooter</a></li>
+                    <li><a href="#"><i class="fas fa-fort-awesome"></i> Fortnite</a></li>
+                    <li><a href="#"><i class="fas fa-fire-alt"></i> Free Fire</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3><i class="fas fa-paper-plane"></i> Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Game Glitz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <video id="gamePreview" controls>
+                <source src="game-preview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="home.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

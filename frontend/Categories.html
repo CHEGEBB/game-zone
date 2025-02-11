@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Glitz - Categories</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="categories.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-gamepad"></i>
+            <span>Game Glitz</span>
+        </a>
+        <ul class="nav">
+            <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="Categories.html" class="active"><i class="fas fa-th-large"></i> Categories</a></li>
+            <li><a href="blogsss.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="Community.html"><i class="fas fa-info-circle"></i>Community</a></li>
+            <li><a href="Feedback new.html"><i class="fas fa-comment"></i> Feedback</a></li>
+        </ul>
+        <div class="user-actions">
+            <div class="search-box">
+                <input type="text" placeholder="Search games...">
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <!-- <div class="auth-buttons">
+                <button class="login-btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <button class="signup-btn"><i class="fas fa-user-plus"></i> Sign Up</button>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="banner">
+        <div class="overlay"></div>
+        <div class="bg">
+            <div class="content">
+                <h2>Explore Our<br>Game<br>Categories</h2>
+                <p>Find your next gaming adventure across multiple genres</p>
+                <div class="category-stats">
+                    <div class="stat">
+                        <i class="fas fa-gamepad"></i>
+                        <span>500+ Games</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-tags"></i>
+                        <span>8 Categories</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span>1M+ Players</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="category-filter">
+        <h3>Browse Categories</h3>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-border-all"></i> All Games
+            </button>
+            <button class="filter-btn" data-filter="action">
+                <i class="fas fa-fist-raised"></i> Action
+            </button>
+            <button class="filter-btn" data-filter="adventure">
+                <i class="fas fa-mountain"></i> Adventure
+            </button>
+            <button class="filter-btn" data-filter="strategy">
+                <i class="fas fa-chess"></i> Strategy
+            </button>
+            <button class="filter-btn" data-filter="horror">
+                <i class="fas fa-ghost"></i> Horror
+            </button>
+            <button class="filter-btn" data-filter="sports">
+                <i class="fas fa-football-ball"></i> Sports
+            </button>
+        </div>
+    </div>
+
+  <!-- Action Games Section -->
+<section class="game-section" id="action">
+    <h3><i class="fas fa-fist-raised"></i> Action Games</h3>
+    <div class="game-grid">
+        <!-- God of War Card -->
+        <div class="game-card" data-category="action">
+            <div class="card-header">
+                <img src="gow.jpg" alt="God of War">
+                <div class="card-overlay">
+                    <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i> Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>God of War</h4>
+                    <div class="meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn"><i class="fas fa-play-circle"></i> Try Demo</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spider-Man Card -->
+        <div class="game-card" data-category="action">
+            <div class="card-header">
+                <img src="spd2.jpg" alt="Spider-Man">
+                <div class="card-overlay">
+                    <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    <button class="preview-btn" data-video="spider.mp4">
+                        <i class="fas fa-play"></i> Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Marvel's Spider-Man 2</h4>
+                    <div class="meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        <span class="price">$69.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn"><i class="fas fa-play-circle"></i> Try Demo</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elden Ring Card -->
+        <div class="game-card" data-category="action">
+            <div class="card-header">
+                <img src="Elden Ring.jpg" alt="Elden Ring">
+                <div class="card-overlay">
+                    <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    <button class="preview-btn" data-video="fort.webm">
+                        <i class="fas fa-play"></i> Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Elden Ring</h4>
+                    <div class="meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn"><i class="fas fa-play-circle"></i> Try Demo</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Devil May Cry 5 Card -->
+        <div class="game-card" data-category="action">
+            <div class="card-header">
+                <img src="dmc5.jpg" alt="Devil May Cry 5">
+                <div class="card-overlay">
+                    <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i> Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Devil May Cry 5</h4>
+                    <div class="meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        <span class="price">$39.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn"><i class="fas fa-play-circle"></i> Try Demo</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekiro Card -->
+        <div class="game-card" data-category="action">
+            <div class="card-header">
+                <img src="sekiro.jpg" alt="Sekiro">
+                <div class="card-overlay">
+                    <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    <button class="preview-btn" data-video="sekiro-preview.mp4">
+                        <i class="fas fa-play"></i> Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Sekiro: Shadows Die Twice</h4>
+                    <div class="meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn"><i class="fas fa-play-circle"></i> Try Demo</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monster Hunter Card -->
+        <div class="game-card" data-category="action">
+            <div class="card-header">
+                <img src="monster.jpg" alt="Monster Hunter World">
+                <div class="card-overlay">
+                    <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    <button class="preview-btn" data-video="vid2.mp4">
+                        <i class="fas fa-play"></i> Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Monster Hunter World</h4>
+                    <div class="meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        <span class="price">$29.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn"><i class="fas fa-play-circle"></i> Try Demo</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Adventure Games Section -->
+<section class="game-section" id="adventure">
+    <h3><i class="fas fa-hiking"></i> Adventure Games</h3>
+    <div class="game-grid">
+        <!-- The Legend of Zelda: Breath of the Wild Card -->
+        <div class="game-card" data-category="adventure">
+            <div class="card-header">
+                <img src="zelda.webp" alt="The Legend of Zelda: Breath of the Wild">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid3.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>The Legend of Zelda: Breath of the Wild</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.9
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizon Forbidden West Card -->
+        <div class="game-card" data-category="adventure">
+            <div class="card-header">
+                <img src="horizon.jpg" alt="Horizon Forbidden West">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Horizon Forbidden West</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.8
+                        </span>
+                        <span class="price">$69.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Red Dead Redemption 2 Card -->
+        <div class="game-card" data-category="adventure">
+            <div class="card-header">
+                <img src="rdr2.jpg" alt="Red Dead Redemption 2">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Red Dead Redemption 2</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.9
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ghost of Tsushima Card -->
+        <div class="game-card" data-category="adventure">
+            <div class="card-header">
+                <img src="ghost.jpg" alt="Ghost of Tsushima">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="fort.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Ghost of Tsushima</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.8
+                        </span>
+                        <span class="price">$49.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assassin's Creed Odyssey Card -->
+        <div class="game-card" data-category="adventure">
+            <div class="card-header">
+                <img src="odessey.jpg" alt="Assassin's Creed Odyssey">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid3.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Assassin's Creed Odyssey</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.7
+                        </span>
+                        <span class="price">$39.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shadow of the Tomb Raider Card -->
+        <div class="game-card" data-category="adventure">
+            <div class="card-header">
+                <img src="tomb.jpg" alt="Shadow of the Tomb Raider">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="tomb-raider-preview.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Shadow of the Tomb Raider</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.6
+                        </span>
+                        <span class="price">$29.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Strategy Games Section -->
+<section class="game-section" id="strategy">
+    <h3><i class="fas fa-chess"></i> Strategy Games</h3>
+    <div class="game-grid">
+        <!-- Sid Meier's Civilization VI Card -->
+        <div class="game-card" data-category="strategy">
+            <div class="card-header">
+                <img src="sid.jpg" alt="Sid Meier's Civilization VI">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Sid Meier's Civilization VI</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.8
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Age of Empires IV Card -->
+        <div class="game-card" data-category="strategy">
+            <div class="card-header">
+                <img src="age.jpg" alt="Age of Empires IV">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="minecraft.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Age of Empires IV</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.7
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- XCOM 2 Card -->
+        <div class="game-card" data-category="strategy">
+            <div class="card-header">
+                <img src="xcom2.jpg" alt="XCOM 2">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>XCOM 2</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.6
+                        </span>
+                        <span class="price">$39.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total War: Warhammer III Card -->
+        <div class="game-card" data-category="strategy">
+            <div class="card-header">
+                <img src="warhammer3.jpg" alt="Total War: Warhammer III">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid3.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Total War: Warhammer III</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.7
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stellaris Card -->
+        <div class="game-card" data-category="strategy">
+            <div class="card-header">
+                <img src="stellaris.jpg" alt="Stellaris">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid2.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Stellaris</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.5
+                        </span>
+                        <span class="price">$39.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crusader Kings III Card -->
+        <div class="game-card" data-category="strategy">
+            <div class="card-header">
+                <img src="ck3.jpg" alt="Crusader Kings III">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Crusader Kings III</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.8
+                        </span>
+                        <span class="price">$49.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Horror Games Section -->
+<section class="game-section" id="horror">
+    <h3><i class="fas fa-ghost"></i> Horror Games</h3>
+    <div class="game-grid">
+        <!-- Resident Evil Village Card -->
+        <div class="game-card" data-category="horror">
+            <div class="card-header">
+                <img src="re-village.jpg" alt="Resident Evil Village">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid3.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Resident Evil Village</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.7
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Last of Us Part II Card -->
+        <div class="game-card" data-category="horror">
+            <div class="card-header">
+                <img src="tlou2.jpg" alt="The Last of Us Part II">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="fort.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>The Last of Us Part II</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.8
+                        </span>
+                        <span class="price">$69.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dead Space Remake Card -->
+        <div class="game-card" data-category="horror">
+            <div class="card-header">
+                <img src="dead-space.jpg" alt="Dead Space Remake">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid3.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Dead Space Remake</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.6
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Silent Hill 2 Remake Card -->
+        <div class="game-card" data-category="horror">
+            <div class="card-header">
+                <img src="silent-hill2.jpg" alt="Silent Hill 2 Remake">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="silent-hill2-preview.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Silent Hill 2 Remake</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.5
+                        </span>
+                        <span class="price">$49.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outlast 2 Card -->
+        <div class="game-card" data-category="horror">
+            <div class="card-header">
+                <img src="outlast2.jpg" alt="Outlast 2">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid2.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Outlast 2</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.4
+                        </span>
+                        <span class="price">$29.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phasmophobia Card -->
+        <div class="game-card" data-category="horror">
+            <div class="card-header">
+                <img src="phasmobia.jpg" alt="Phasmophobia">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid3.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Phasmophobia</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.6
+                        </span>
+                        <span class="price">$19.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sports Games Section -->
+<section class="game-section" id="sports">
+    <h3><i class="fas fa-football-ball"></i> Sports Games</h3>
+    <div class="game-grid">
+        <!-- FIFA 24 Card -->
+        <div class="game-card" data-category="sports">
+            <div class="card-header">
+                <img src="fC25.jpg" alt="FC 25">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="fc25.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>FC 25</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.5
+                        </span>
+                        <span class="price">$69.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- NBA 2K24 Card -->
+        <div class="game-card" data-category="sports">
+            <div class="card-header">
+                <img src="nba2k24.jpg" alt="NBA 2K24">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="nba.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>NBA 2K24</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.6
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- F1 24 Card -->
+        <div class="game-card" data-category="sports">
+            <div class="card-header">
+                <img src="f1.jpg" alt="F1 24">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="f1.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>F1 24</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.7
+                        </span>
+                        <span class="price">$69.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Madden NFL 24 Card -->
+        <div class="game-card" data-category="sports">
+            <div class="card-header">
+                <img src="nfl.jpg" alt="Madden NFL 24">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>Madden NFL 24</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.4
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MLB The Show 24 Card -->
+        <div class="game-card" data-category="sports">
+            <div class="card-header">
+                <img src="mlb.jpg" alt="MLB The Show 24">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>MLB The Show 24</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.5
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- UFC 5 Card -->
+        <div class="game-card" data-category="sports">
+            <div class="card-header">
+                <img src="ufc.webp" alt="UFC 5">
+                <div class="card-overlay">
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="preview-btn" data-video="vid.mp4">
+                        <i class="fas fa-play"></i>
+                        Preview
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <h4>UFC 5</h4>
+                    <div class="meta">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            4.3
+                        </span>
+                        <span class="price">$59.99</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="demo-btn">
+                        <i class="fas fa-play-circle"></i>
+                        Try Demo
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hidden Cards Container -->
+<div class="hidden-cards" style="display: none;">
+    <!-- Hidden Card 1: Football Manager 2024 -->
+    <div class="game-card" data-category="sports">
+        <div class="card-header">
+            <img src="fm2024.jpg" alt="Football Manager 2024">
+            <div class="card-overlay">
+                <button class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </button>
+                <button class="preview-btn" data-video="fm2024-preview.mp4">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="game-info">
+                <h4>Football Manager 2024</h4>
+                <div class="meta">
+                    <span class="rating">
+                        <i class="fas fa-star"></i>
+                        4.8
+                    </span>
+                    <span class="price">$54.99</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <button class="demo-btn">
+                    <i class="fas fa-play-circle"></i>
+                    Try Demo
+                </button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Card 2: Pro Evolution Soccer 2024 -->
+    <div class="game-card" data-category="sports">
+        <div class="card-header">
+            <img src="pes2024.jpg" alt="Pro Evolution Soccer 2024">
+            <div class="card-overlay">
+                <button class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </button>
+                <button class="preview-btn" data-video="pes2024-preview.mp4">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="game-info">
+                <h4>Pro Evolution Soccer 2024</h4>
+                <div class="meta">
+                    <span class="rating">
+                        <i class="fas fa-star"></i>
+                        4.6
+                    </span>
+                    <span class="price">$49.99</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <button class="demo-btn">
+                    <i class="fas fa-play-circle"></i>
+                    Try Demo
+                </button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Card 3: NHL 24 -->
+    <div class="game-card" data-category="sports">
+        <div class="card-header">
+            <img src="nhl24.jpg" alt="NHL 24">
+            <div class="card-overlay">
+                <button class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                </button>
+                <button class="preview-btn" data-video="nhl24-preview.mp4">
+                    <i class="fas fa-play"></i>
+                    Preview
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="game-info">
+                <h4>NHL 24</h4>
+                <div class="meta">
+                    <span class="rating">
+                        <i class="fas fa-star"></i>
+                        4.5
+                    </span>
+                    <span class="price">$59.99</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <button class="demo-btn">
+                    <i class="fas fa-play-circle"></i>
+                    Try Demo
+                </button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Load More Button -->
+    <div class="load-more">
+        <button class="load-more-btn">
+            <i class="fas fa-spinner"></i>
+            Load More Games
+        </button>
+    </div>
+
+    <!-- Video Preview Modal -->
+    <div class="modal" id="previewModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <video id="previewVideo" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5><i class="fas fa-gamepad"></i> Our Vision</h5>
+                <p>Creating the ultimate gaming experience where players worldwide can discover, play, and connect. We offer an extensive collection of games across all genres, complemented by a vibrant community platform.</p>
+            </div>
+            <div class="footer-section">
+                <h5><i class="fas fa-link"></i> Quick Links</h5>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Browse Games</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Special Offers</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5><i class="fas fa-headset"></i> Support</h5>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Help Center</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> FAQ</a></li>
+                    <li><a href="About.html"><i class="fa fa-users"></i> About Us</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Game Glitz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="categories.js"></script>
+    <script src="auth.js"></script>   
+</body>
+</html>
