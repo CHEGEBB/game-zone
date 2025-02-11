@@ -120,7 +120,7 @@ function getAuthToken() {
 
 async function fetchFromAPI(endpoint, options = {}) {
     try {
-        const response = await fetch("http://localhost:5000/api/cart", {
+        const response = await fetch("https://game-zone-62w0.onrender.com/api/cart", {
             ...options,
             headers: {
                 ...options.headers,
