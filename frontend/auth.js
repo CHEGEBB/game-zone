@@ -333,6 +333,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start periodic auth checking
     startAuthCheck();
     
-    // Initialize forms if they exist
     initializeAuthForms();
 });
