@@ -1,9 +1,10 @@
 // Constants
-const API_URL = 'https://game-zone-62w0.onrender.com/api';
+const API_URL = 'https://game-glitz1.onrender.com/api';
 const AUTH_TOKEN_KEY = 'auth_token';
 const USER_KEY = 'user_data';
 const SESSION_DURATION = 1000 * 60 * 60; // 1 hour
 const PUBLIC_PATHS = ['/index.html', '/login.html', '/register.html', '/']; // Pages accessible without auth
+const HOME_PAGE = 'Home.html'; // Define the correct home page filename with capital H
 
 // Input styling functions
 function setInputSuccess(inputElement) {
@@ -144,7 +145,7 @@ function checkAuth() {
     }
     
     if (isAuthenticated() && isPublicPath) {
-        window.location.href = 'Home.html';
+        window.location.href = HOME_PAGE; // Use the constant with capital H
         return false;
     }
     
@@ -199,7 +200,7 @@ function initializeAuthForms() {
                 if (result.success) {
                     setInputSuccess(username);
                     setInputSuccess(password);
-                    window.location.href = 'home.html';
+                    window.location.href = HOME_PAGE; // Use the constant with capital H
                 } else {
                     setInputError(username, result.error);
                     setInputError(password, result.error);
