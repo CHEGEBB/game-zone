@@ -119,3 +119,36 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const nav = document.querySelector('.nav');
+    
+    toggleMenu.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        
+        // Optional: Change hamburger icon to times icon when menu is open
+        const icon = this.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!nav.contains(e.target) && !toggleMenu.contains(e.target) && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            const icon = toggleMenu.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        }
+    });
+
+    // Close menu when clicking a nav link
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            const icon = toggleMenu.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        });
+    });
+});

@@ -267,6 +267,84 @@ header.sticky {
     font-size: 1.5em;
     color: var(--text-light);
 }
+/* Mobile Menu Toggle Button */
+.toggleMenu {
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    padding: 8px;
+    border-radius: 5px;
+    transition: var(--transition-fast);
+}
+
+.toggleMenu i {
+    font-size: 1.5em;
+    color: var(--text-light);
+}
+
+.toggleMenu:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 991px) {
+    .nav {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--background-dark);
+        padding: 20px;
+        box-shadow: var(--shadow-dark);
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%);
+    }
+
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        transform: translateY(0);
+    }
+
+    .nav li {
+        width: 100%;
+    }
+
+    .nav li a {
+        padding: 15px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .nav li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .toggleMenu {
+        display: block;
+    }
+
+    /* Adjust header for mobile */
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+        width: auto;
+    }
+
+    /* Hide search on mobile */
+    .searchBox {
+        display: none;
+    }
+
+    /* Adjust user actions for mobile */
+    .user-actions {
+        display: none;
+    }
+}
 
 /* Banner/Hero Section */
 .banner {
