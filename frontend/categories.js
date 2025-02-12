@@ -626,3 +626,66 @@ if (typeof module !== 'undefined' && module.exports) {
     };
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Add hamburger menu button if it doesn't exist
+    const header = document.querySelector('header');
+    if (!document.querySelector('.toggleMenu')) {
+        const toggleMenu = document.createElement('div');
+        toggleMenu.className = 'toggleMenu';
+        toggleMenu.innerHTML = '<i class="fas fa-bars"></i>';
+        header.appendChild(toggleMenu);
+    }
+
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const nav = document.querySelector('.nav');
+    
+    // Toggle menu function
+    function toggleNav() {
+        nav.classList.toggle('active');
+        const icon = toggleMenu.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    }
+    
+    // Event listeners
+    toggleMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleNav();
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!nav.contains(e.target) && !toggleMenu.contains(e.target)) {
+            nav.classList.remove('active');
+            const icon = toggleMenu.querySelector('i');
+            icon.classList.replace('fa-times', 'fa-bars');
+        }
+    });
+
+    // Close menu when clicking a nav link
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            const icon = toggleMenu.querySelector('i');
+            icon.classList.replace('fa-times', 'fa-bars');
+        });
+    });
+
+    // Handle cart count
+    const cartCount = document.querySelector('.cart-count');
+    const cartIcon = document.querySelector('.cart-icon');
+    
+    cartIcon.addEventListener('click', function() {
+        // Add your cart functionality here
+        console.log('Cart clicked');
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 991) {
+            nav.classList.remove('active');
+            const icon = toggleMenu.querySelector('i');
+            icon.classList.replace('fa-times', 'fa-bars');
+        }
+    });
+});
